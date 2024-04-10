@@ -2,6 +2,7 @@ const express =require("express");
 const app = express();
 const mongoose = require("mongoose");
 const Book  = require('./models/bookModel');
+const mongoDBURL = require('./config');
 
 const bookRoute  = require('./routes/bookroutes');
 const cors = require('cors');
@@ -20,7 +21,7 @@ app.use(cors());
 // )
 
 
-const mongoDBURL ='mongodb+srv://dhanepratik543:S14J33F9esYs1Ib2@book.ridhpsu.mongodb.net/';
+
 
 app.get('/',(req,res)=>{
     console.log(req);
