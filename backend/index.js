@@ -11,13 +11,13 @@ port=3000;
 app.use(express.json());
 
 app.use(cors());
-app.use(
-  cors({
-    origin:'127.0.0.1:3000',
-    methods:['GET','POST','PUT','DELETE'],
-    allowedHeaders:['Content-Type'],
-  })
-)
+// app.use(
+//   cors({
+//     origin:'127.0.0.1:3000',
+//     methods:['GET','POST','PUT','DELETE'],
+//     allowedHeaders:['Content-Type'],
+//   })
+// )
 
 
 const mongoDBURL ='mongodb+srv://dhanepratik543:S14J33F9esYs1Ib2@book.ridhpsu.mongodb.net/';
