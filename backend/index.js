@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const Book  = require('./models/bookModel');
 const mongoDBURL = require('./config');
-
+//add mongodburl in config.js
 const bookRoute  = require('./routes/bookroutes');
 const cors = require('cors');
 
